@@ -6,6 +6,10 @@
 .c92mAuto{
     margin: 25% auto;
 }
+.c92BorderRadius{
+    border-radius: 5px;
+
+}
 
 .c92Box{
     width: 800px;
@@ -14,10 +18,26 @@
 .c92BoxLeft{
     width: 650px;
     height: 500px;
+    position: relative;
 }
 .c92BoxLeft img{
     width: 100%;
     height: 100%;
+}
+
+.c92Btn{
+    position: absolute;
+    z-index: 1000;
+    left: 45%;
+    right: 45%;
+}
+.c92BtnTop{
+    margin-top: 5px;
+    top: 0;
+}
+.c92BtnBot{
+    margin-bottom: 5px;
+    bottom: 0;
 }
 
 .c92BoxRight{
