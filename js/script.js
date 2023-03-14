@@ -61,3 +61,13 @@ function c92MoveBot(){
     slideImg.src = images[currentImg];
    
 }
+
+
+
+for (let i = 0; i < images.length; i++) {
+    let slideImgRight = document.createElement('div');
+    slideImgRight.innerHTML = `<img src= "${images[i]}"></img>`;
+    const c92BoxRight = document.querySelector('.c92BoxRight');
+    c92BoxRight.appendChild(slideImgRight);
+    console.log(slideImgRight);
+}  

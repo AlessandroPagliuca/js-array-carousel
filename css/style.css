@@ -43,6 +43,11 @@
 .c92BoxRight{
     width: 150px;
     height: 500px;
+    position: relative;
+}
+.c92BoxRight img{
+    width: 100%;
+    height: 100px;
 }
 .debug{
     border: 1px solid black;
