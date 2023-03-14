@@ -16,29 +16,48 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 /*
  
-`<img src="./img/01.webp" alt="" class="slide">`
+`<img src="./img/01.webp" alt="" class="active">`
  
 */
 
 // create array with img
-
 const images = ['./img/01.webp', './img/02.webp', './img/03.webp', './img/04.webp', './img/05.webp'];
 console.log(images);
 
 let currentImg = 0;
+let slideImg = document.querySelector('img#slide');
+slideImg.src = images[currentImg];
+console.log(slideImg.src)
 
-const c92BtnTop = document.querySelector('c92BtnTop');
+//button top 
+const c92BtnTop = document.querySelector('.c92BtnTop');
 c92BtnTop.addEventListener('click', c92MoveTop);
 
+function c92MoveTop(){
+    if(currentImg <= 0){
+        currentImg = images.length;
+        
+    }
+    
+    currentImg--;
+    let slideImg = document.querySelector('img#slide');
+    slideImg.src = images[currentImg];
 
-const c92BtnBot = document.querySelector('c92BtnBot');
+}
+
+//button bot
+const c92BtnBot = document.querySelector('.c92BtnBot');
 c92BtnBot.addEventListener('click', c92MoveBot);
 console.log('bot');
 
-function c92MoveTop(){
-    console.log('top')
-}
-
 function c92MoveBot(){
-    console.log('Bot')
+    if(currentImg >= images.length - 1){
+        currentImg = - 1;
+        
+    }
+        
+    currentImg++;
+    let slideImg = document.querySelector('img#slide');
+    slideImg.src = images[currentImg];
+   
 }
