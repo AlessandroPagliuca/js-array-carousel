@@ -13,3 +13,32 @@ Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella mile
 MILESTONE 3
 Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
 */
+
+/*
+ 
+`<img src="./img/01.webp" alt="" class="slide">`
+ 
+*/
+
+// create array with img
+
+const images = ['./img/01.webp', './img/02.webp', './img/03.webp', './img/04.webp', './img/05.webp'];
+console.log(images);
+
+let currentImg = 0;
+
+const c92BtnTop = document.querySelector('c92BtnTop');
+c92BtnTop.addEventListener('click', c92MoveTop);
+
+
+const c92BtnBot = document.querySelector('c92BtnBot');
+c92BtnBot.addEventListener('click', c92MoveBot);
+console.log('bot');
+
+function c92MoveTop(){
+    console.log('top')
+}
+
+function c92MoveBot(){
+    console.log('Bot')
+}
