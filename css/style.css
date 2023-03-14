@@ -68,8 +68,8 @@
 }
 
 .c92thumbnails{
-    opacity: 0.5;
+    filter: brightness(0.4);
 }
 .c92mainThumbnails{
-    opacity: 1!important;
+    filter: brightness(1)!important;
 }
