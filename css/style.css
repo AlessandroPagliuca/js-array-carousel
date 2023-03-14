@@ -4,11 +4,19 @@
 }
 
 .c92mAuto{
-    margin: 25% auto;
+    margin: auto;
 }
 .c92BorderRadius{
     border-radius: 5px;
 
+}
+.c92BorderRadiusLeft{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c92BorderRadiusRight{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .c92Box{
@@ -19,6 +27,7 @@
     width: 750px;
     height: 500px;
     position: relative;
+    overflow: hidden;
 }
 .c92BoxLeft img{
     width: 100%;
@@ -44,6 +53,8 @@
     width: 150px;
     height: 500px;
     position: relative;
+    overflow: hidden;
+
 }
 .c92BoxRight img{
     width: 100%;
@@ -51,4 +62,14 @@
 }
 .debug{
     border: 1px solid black;
+}
+.c92BorderC{
+    border: 1px solid white;
+}
+
+.c92thumbnails{
+    opacity: 0.5;
+}
+.c92mainThumbnails{
+    opacity: 1!important;
 }
