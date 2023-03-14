@@ -1,0 +1,29 @@
+.c92Wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.c92mAuto{
+    margin: 25% auto;
+}
+
+.c92Box{
+    width: 800px;
+    height:500px;
+}
+.c92BoxLeft{
+    width: 650px;
+    height: 500px;
+}
+.c92BoxLeft img{
+    width: 100%;
+    height: 100%;
+}
+
+.c92BoxRight{
+    width: 150px;
+    height: 500px;
+}
+.debug{
+    border: 1px solid black;
+}
