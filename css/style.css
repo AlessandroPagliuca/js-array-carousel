@@ -38,8 +38,7 @@
 .c92Btn{
     position: absolute;
     z-index: 1000;
-    left: 45%;
-    right: 45%;
+    left: 40%;
 }
 .c92BtnTop{
     margin-top: 5px;

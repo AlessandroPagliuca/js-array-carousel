@@ -85,3 +85,16 @@ for (let i = 0; i < images.length; i++) {
     console.log(slideImgRight);
 }  
 
+// autoplay carousel 
+let intervalSlider;
+
+function startInterval(){
+    intervalSlider = setInterval(c92MoveBot, 3000);
+}
+
+function stopInterval() {
+    clearInterval(intervalSlider);
+}
+slideImg.addEventListener('mouseover', stopInterval);
+slideImg.addEventListener('mouseout', startInterval);
+startInterval();
